@@ -21,6 +21,47 @@ A professional website for **Eissa House Interior Design**, showcasing our exper
 - **Font Awesome**: For professional and consistent icons.
 - **Custom JavaScript**: For interactivity and functionality.
 
+## Project Structure 
+
+The project is structured as follows:
+```
+your-project/
+│
+├── css/
+│   └── style.css
+│   └── style.min.css
+│
+├── js/
+│   ├── main.js
+│
+├── img/
+│   ├── carousel-1.jpg
+│   ├── carousel-2.jpg
+│   └── ...
+│
+├── lib/
+│   ├── owlcarousel/
+│   ├── lightbox/
+│   └── ...
+│
+├── mail/
+│   ├── contact.js
+│   └── jqBootstrapValidation.min.js
+├── scss/
+│   ├── bootstrap/
+│    └── ...
+│   └── style.scss
+│
+│
+├── index.html
+├── about.html
+├── service.html
+├── project.html
+└── contact.html
+└── blog.html
+└── single.html
+```
+
 ---
 
 ## How to Use
@@ -29,3 +70,9 @@ A professional website for **Eissa House Interior Design**, showcasing our exper
    ```bash
    git clone https://github.com/mohamedeissa/eissa-house-website.git
    ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
