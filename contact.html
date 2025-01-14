@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Eissa House Interior Design | Company in Egypt | Contact</title>
+    <title>Eissa House Interior Design | Company in Egypt</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -30,6 +30,42 @@
 </head>
 
 <body>
+    <!-- Start Floating WhatsApp Icon -->
+    <a href="https://wa.me/201098891155" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/201098891155" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px; /* Changed from right to left */
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(360deg);
+            box-shadow: 2px 2px 10px #999;
+        }
+
+        .whatsapp-icon {
+            margin-top: 16px;
+        }
+    </style>
+        <!-- End Floating WhatsApp Icon -->
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3">
         <div class="container">
@@ -85,8 +121,6 @@
     <!-- Topbar End -->
 
 
-
-
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container position-relative" style="z-index: 9;">
@@ -99,18 +133,19 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <!-- <a href="project.html" class="nav-item nav-link">Project</a>
+                        <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="book.html" class="nav-item nav-link active">التسعير المجاني</a> 
+                        <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                        <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
+                       <!-- <a href="project.html" class="nav-item nav-link">Project</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="blog.html" class="dropdown-item">Blog Grid</a>
                                 <a href="single.html" class="dropdown-item">Blog Detail</a>
-                            </div> -->
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div> 
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                 </div>
             </nav>
@@ -307,82 +342,6 @@
     }
 </script>
 
-    <!-- Contact Start -->
-     
-    <!-- <div class="container-fluid bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
-                        <div class="d-inline-flex border border-secondary p-4 mb-4">
-                            <h1 class="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Our Office</h4>
-                                <p class="m-0 text-white">Alexandria, Egypt</p>
-                                <p class="m-0 text-white">EL-Sheikh Zayed, Egypt</p>
-                            </div>
-                        </div>
-                        <div class="d-inline-flex border border-secondary p-4 mb-4">
-                            <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Email Us</h4>
-                                <p class="m-0">
-                                    <a href="mailto:eissahouse.eg@gmail.com" class="text-decoration-none text-dark d-flex align-items-center">
-                                        <i class="fas fa-envelope mr-2"></i> eissahouse.eg@gmail.com
-                                    </a>
-                                </p>    
-                            </div>
-                        </div>
-                        <div class="d-inline-flex border border-secondary p-4">
-                            <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Call Us</h4>
-
-                            <a class="text-white px-3 d-flex align-items-center mb-2" href="tel:+201070904089">
-                                <i class="fas fa-phone-alt mr-2"></i> Alex: +201070904089
-                            </a>
-                            
-                            <a class="text-white px-3 d-flex align-items-center" href="tel:+201095500512">
-                                <i class="fas fa-phone-alt mr-2"></i> Cairo: +201095500512
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 mb-5 my-lg-5 py-5 pl-lg-5">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="name" placeholder=" ادخل الاسم" required="required" data-validation-required-message="من فضللك ادخل اسمك" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control p-4" id="phone" placeholder=" ادخل رقم الهاتف" required="required" data-validation-required-message="من فضللك ادخل رقم الهاتف" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="الخدمة" placeholder="ادخل الخدمة المطلوبة (تشطيب كامل - تعديلات وتجديد - نص تشطيب )" required="required" data-validation-required-message="من فضللك ادخل الخدمة المطلوبة " />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control p-4" rows="6" id="message" placeholder=" ادخل الخدمة المطلوبة بالتفاصيل " required="required" data-validation-required-message="من فضللك ادخل التفاصيل"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">ارسل الطلب</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     -->
-    <!-- Contact End -->
-
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
@@ -432,14 +391,12 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="container border-top border-secondary pt-5">
-            <p class="m-0 text-center text-white">
-                &copy;2024 <a class="text-white font-weight-bold" href="#">ANAMLs.co</a>. All Rights Reserved. Designed with ♥️ by
-                <a class="text-white font-weight-bold" href="#">Mohamed Abdulaziz Eisa</a>
-            </p>
-        </div>
-    </div>
+            <div class="container border-top border-secondary pt-5">
+                <p class="m-0 text-center text-white">
+                    &copy;2025 <a class="text-white font-weight-bold" href="#">ANAMLs.co</a>. All Rights Reserved. Designed with ♥️ by
+                    <a class="text-white font-weight-bold" href="https://www.linkedin.com/in/mohammed-abdulaziz-eisa/" target="_blank">Mohamed Abdulaziz Eisa</a>
+                </p>
+            </div>
     <!-- Footer End -->
 
 

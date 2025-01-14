@@ -116,6 +116,34 @@
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ]
     });
+
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting normally
+
+            // Collect form data
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const serviceType = document.getElementById('service-type').value;
+            const projectType = document.getElementById('project-type').value;
+            const area = document.getElementById('area').value;
+            const address = document.getElementById('address').value;
+            const requirements = document.getElementById('requirements').value;
+
+            // Create WhatsApp message
+            const message = `الاسم: ${name}\nرقم الموبايل: ${phone}\nنوع الخدمة المطلوبة: ${serviceType}\nنوع المشروع: ${projectType}\nمساحة المشروع: ${area}\nعنوان المشروع: ${address}\nمتطلبات العميل: ${requirements}`;
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // WhatsApp URL
+            const whatsappURL = `https://wa.me/201098891155?text=${encodedMessage}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappURL, '_blank');
+        });
+    }
     
 })(jQuery);
 
