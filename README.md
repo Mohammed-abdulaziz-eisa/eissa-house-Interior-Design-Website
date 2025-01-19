@@ -25,7 +25,7 @@ A professional website for **Eissa House Interior Design**, showcasing our exper
 
 The project is structured as follows:
 ```
-your-project/
+project/
 │
 ├── css/
 │   └── style.css
@@ -34,7 +34,7 @@ your-project/
 ├── js/
 │   ├── main.js
 │
-├── img/
+├── imgs/
 │   ├── carousel-1.jpg
 │   ├── carousel-2.jpg
 │   └── ...
@@ -46,6 +46,7 @@ your-project/
 │
 ├── mail/
 │   ├── contact.js
+│   └── contact.php
 │   └── jqBootstrapValidation.min.js
 ├── scss/
 │   ├── bootstrap/
@@ -53,13 +54,9 @@ your-project/
 │   └── style.scss
 │
 │
-├── index.html
-├── about.html
-├── service.html
-├── project.html
+├── index.html   # main (home) page 
+├── book.html
 └── contact.html
-└── blog.html
-└── single.html
 ```
 
 ---
